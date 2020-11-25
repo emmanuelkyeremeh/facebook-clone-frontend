@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(235, 232, 232);
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    margin-top: -0.5rem;
+    box-shadow: 1px 1px 1px 1px rgb(214, 213, 213);
+}
+nav i{
+    color: rgb(78, 71, 71);
+}
+nav i:hover {
+    color: rgb(47, 103, 216);
+}
+.fa-facebook {
+    color: rgb(56, 107, 211);
+    font-size: 2.5rem;
+}
+.first {
+    display: flex;
+    align-items: center;
+    flex: 0.2;
+    flex: wrap;
+}
+.second {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0.5;
+    margin-right: 10%;
+}
+.second i{
+    font-size: 1.5rem;
+}
+.third {
+    display: flex;
+    justify-content: center;
+    flex: 0.2;
+    margin-right: 2%;
+
+}
+.third i{
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+.third img{
+    margin-top: -0.2rem;
+}
+.facebook-input{
+    outline-width: 0;
+    background-color :#d9dde4;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin-left: 2%;
+}
+.fa-home {
+    color: rgb(74, 113, 219);
+}
+
+.sidebar {
+    height: 80vh;
+    overflow-y: hidden;
+    padding-top: 2rem;
+    line-height: 3.5rem;
+    width: 20%;
+    align-items: left;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem; 
+    transition: 0.5s;
+}
+.sidebar:hover{
+    overflow-y: scroll;
+}
+.sidebar-list{
+    display: flex;
+    justify-content: center;
+    background-color:   rgb(235, 232, 232);
+    padding-right: 45%;
+}
+.sidebar-list p{
+margin-left: 2%;
+}
+.app {
+    display: flex;
+    justify-content: space-between;
+}
+.SidebarLeft {
+    flex: 0.3;
+    
+}
+.third i{
+    font-size: 1.5rem;
+}
+.post-block {
+    
+    background-color: white;
+    height: 100px;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 470px;
+    margin-top: 1rem;
+}
+.Posts {
+    flex: 0.5;
+
+    
+}
+.post-input {
+    height: 5%;
+    width: 80%;
+    outline-width: 0;
+    background-color: #d9dde4;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    margin-left: 2%;
+}
+.iframe {
+    flex: 0.2;
+}
+
+.post-tray{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding-bottom: 1rem;
+}
+.post-tray p{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1rem;
+}
+.post-block-inner {
+    display: flex;
+    justify-content: center; 
+}
+
+.post-tray i {
+    font-size: 1.5rem;
+}
+.sidebar-list:hover{
+    background-color: rgb(189, 188, 188);
+    border-radius: 25px;
+}
+.feed {
+    width: 500px;
+    margin-top: 1rem;
+    
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px  rgb(218, 217, 217);
+}
+.feed-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.feed-top p{
+    margin-left: 2%;
+}
+.left{
+    display: flex;
+    justify-content: center;
+}
+.date{
+    font-size: 0.7rem;
+}
+.feed-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.feed-bottom i{
+    font-size: 1.2rem;
+}
+.feed-bottom p{
+    margin-left: 5%;
+    font-size: 1rem;
+}
+.like{
+    display: flex;
+    justify-content: center;
+}
+
+.comment{
+    display: flex;
+    justify-content: center;
+}
+.share{
+    display: flex;
+    justify-content: center;
+}
+.frame{
+    border:none;
+    overflow:hidden;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  padding-top: 1rem;
+}
+
+form input{
+    outline-width: 0;
+    background-color: rgb(238, 238, 238);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    display: block;
+}
+form label{
+    text-align: center;
+    margin-bottom: 1%;
+    display: block;
+}
+
+.submit {
+    display: block;
+    background-color: rgb(49, 70, 136);
+    width: 90%;
+    margin-left: 2%;
+    color: white;
+    border-radius: 1px;
+}
+.feed-text{
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+}
+
+@media screen and (max-width:1100px){
+    .sidebar{
+        display: none;
+    }
+    .post-block{
+        margin-left: 15%;
+    }
+    .feed{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width:960px){
+    .frame {
+        display: none;
+    }
+    .post-block{
+        margin-left: 30%;
+    }
+    .feed{
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width:700px){
+    .post-block{
+        margin-left: 5%;
+    }
+    .feed {
+        margin-left: 5%;
+    }
+    .second{
+        display: none;
+    }
+}
+@media screen and (max-width:550px){
+    .post-block{
+        width: 400px !important;
+    }
+    .feed{
+        width:430px !important
+    }
+    .second{
+        display: none;
+    }
+    .third{
+        margin-right: 5%;
+    }
+    
+}
